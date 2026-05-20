@@ -10,18 +10,16 @@
   color: var(--color-neutral-100);
 }
 
-/* ── Section label — absolute top-left ───────────────────── */
+/* ── Section label ───────────────────────────────────────── */
 .stack-section__label {
-  position: absolute;
-  top: var(--space-8);
-  left: var(--space-4);
-  z-index: var(--z-raised);
+  display: block;
   font-family: var(--font-arnamu);
   font-size: var(--text-2xl);
   font-weight: var(--font-semibold);
   letter-spacing: 0.12em;
   text-transform: uppercase;
   color: var(--color-primary-light);
+  margin-bottom: var(--space-6);
 }
 
 /* ── Inner layout — always a column ──────────────────────── */
@@ -71,24 +69,6 @@
   object-fit: contain;
 }
 
-/* ── Responsive ───────────────────────────────────────────── */
-@media (min-width: 640px) {
-  .stack-section__label {
-    left: var(--space-6);
-  }
-}
-
-@media (min-width: 1024px) {
-  .stack-section__label {
-    top: var(--space-12);
-    left: var(--space-8);
-  }
-
-  .stack-section__title {
-    font-size: var(--text-4xl);
-  }
-}
-
 /* ── Ucom overrides ───────────────────────────────────────── */
 .ucom.stack-section {
   background-color: #ffffff;
@@ -102,4 +82,15 @@
 
 .ucom .stack-section__text {
   color: #000000;
+}
+
+/* ── Responsive ───────────────────────────────────────────── */
+@media (min-width: 1280px) {
+  .stack-section__label {
+    margin-inline-start: calc(-1 * var(--space-8));
+  }
+
+  .stack-section__title {
+    font-size: var(--text-4xl);
+  }
 }

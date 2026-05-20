@@ -9,18 +9,16 @@
   color: var(--color-neutral-100);
 }
 
-/* ── Section label — absolute top-left ───────────────────── */
+/* ── Section label ───────────────────────────────────────── */
 .info-section__label {
-  position: absolute;
-  top: var(--space-8);
-  left: var(--space-4); /* tracks .container mobile padding */
-  z-index: var(--z-raised);
+  display: block;
   font-family: var(--font-arnamu);
   font-size: var(--text-2xl);
   font-weight: var(--font-semibold);
   letter-spacing: 0.12em;
   text-transform: uppercase;
   color: var(--color-primary-light);
+  margin-bottom: var(--space-6);
 }
 
 /* ── Inner layout — column on mobile ─────────────────────── */
@@ -104,16 +102,9 @@
 }
 
 /* ── Responsive (mobile-first) ───────────────────────────── */
-@media (min-width: 640px) {
+@media (min-width: 1280px) {
   .info-section__label {
-    left: var(--space-6); /* tracks .container 640px+ padding */
-  }
-}
-
-@media (min-width: 1024px) {
-  .info-section__label {
-    top: var(--space-12);
-    left: var(--space-8); /* tracks .container 1024px+ padding */
+    margin-inline-start: calc(-1 * var(--space-8));
   }
 
   .info-section__inner {

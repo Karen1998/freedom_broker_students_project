@@ -26,3 +26,19 @@
 @import './sections/ideology.css';
 
 /* Pages / Views */
+
+/* ── Scroll Animations ─────────────────────────────────── */
+.will-animate {
+  opacity: 0;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .will-animate {
+    opacity: 1 !important;
+  }
+
+  [data-animate] {
+    animation: none !important;
+    transition: none !important;
+  }
+}
