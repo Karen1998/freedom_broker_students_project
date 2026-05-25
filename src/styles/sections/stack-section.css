@@ -69,18 +69,19 @@
   object-fit: contain;
 }
 
-/* ── Ucom overrides ───────────────────────────────────────── */
-.ucom.stack-section {
+/* ── Freedom Broker overrides ───────────────────────────────────────── */
+.freedom-broker.stack-section {
   background-color: #ffffff;
 }
 
-.ucom .stack-section__label {
-  background-color: #7ce00b;
+.freedom-broker .stack-section__label {
+  /* background-color: #51af3d; */
+  background-color: #0f5431;
   color: #ffffff;
   padding: var(--space-1) var(--space-3);
 }
 
-.ucom .stack-section__text {
+.freedom-broker .stack-section__text {
   color: #000000;
 }
 
