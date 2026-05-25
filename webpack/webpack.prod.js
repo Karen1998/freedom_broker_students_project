@@ -14,7 +14,7 @@ module.exports = merge(common, {
   output: {
     filename: 'scripts/[name].[contenthash:8].bundle.js',
     chunkFilename: 'scripts/[name].[contenthash:8].chunk.js',
-    publicPath: '/students_project/',
+    publicPath: '/freedom_broken_students_project/',
   },
 
   module: {
